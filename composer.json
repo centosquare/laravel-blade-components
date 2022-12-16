@@ -1,7 +1,7 @@
 {
     "name": "centosquare/laravel-blade-components",
     "description": "This library provides Laravel Blade Components",
-    "keywords": ["blade","components","blade-components","laravel","laravel-components", "centosquare", "centodash", "centosquare/centodash"],
+    "keywords": ["blade","components","blade-components","laravel","laravel-components", "centosquare", "centodash", "centosquare-centodash"],
     "authors": [
         {
             "name": "CentoSquare",
