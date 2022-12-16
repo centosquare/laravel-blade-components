@@ -13,7 +13,7 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/../views' => resource_path('views'),
+            __DIR__.'/views' => resource_path('views'),
         ]);
     }
 

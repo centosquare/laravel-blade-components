@@ -4,8 +4,8 @@
     <thead>
     <tr class="fw-bold text-muted {{$tHeadRowClass ?? ''}}">
         @isset($th)
-            @foreach($th as $th)
-                <x-dash.table.th :class="$th['class'] ?? ''">{{$th['title'] ?? ''}}</x-dash.table.th>
+            @foreach($th as $thValue)
+                <x-dash.table.th :class="$thValue['class'] ?? ''">{{$thValue['title'] ?? ''}}</x-dash.table.th>
             @endforeach
         @endisset
     </tr>
