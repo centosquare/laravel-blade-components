@@ -15,5 +15,17 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CentoSquare\\LaravelBladeComponents\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CentoSquare\\LaravelBladeComponents\\LAravelBladeComponentsServiceProvider"
+            ]
+        }
+    }
 }
