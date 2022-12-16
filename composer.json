@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CentoSquare\\LaravelBladeComponents\\LAravelBladeComponentsServiceProvider"
+                "CentoSquare\\LaravelBladeComponents\\LaravelBladeComponentsServiceProvider"
             ]
         }
     }
