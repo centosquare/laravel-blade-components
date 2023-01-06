@@ -14,6 +14,6 @@ class DashboardController extends Controller
      */
     public function dashboard(): View
     {
-        return view('centocomp::layout/app');
+        return view('laravel-blade-components::layout/app');
     }
 }
