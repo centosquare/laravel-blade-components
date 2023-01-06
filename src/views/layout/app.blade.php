@@ -1,7 +1,7 @@
-@component('laravel-blade-components::components.dash.layout.master')
+<x-dash.layout.master>
+    <x-slot name="header">
+        <x-dash.layout.header></x-dash.layout.header>
+    </x-slot>
 
-@endcomponent
 
-{{-- <x-dash.layout.header>
-
-</x-dash.layout.header> --}}
+</x-dash.layout.master>

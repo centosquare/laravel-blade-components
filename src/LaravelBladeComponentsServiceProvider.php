@@ -16,7 +16,9 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__. '/views','laravel-blade-components');
 
-        $this->loadViewComponentsAs('dash', ['dash/layout/header']);
+        Blade::component('laravel-blade-components::components.dash.layout.master', 'dash.layout.master');
+        Blade::component('laravel-blade-components::components.dash.layout.header', 'dash.layout.header');
+
 
 
         $this->publishes([
