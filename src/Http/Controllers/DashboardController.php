@@ -14,6 +14,6 @@ class DashboardController extends Controller
      */
     public function dashboard(): View
     {
-        return view('laravel-blade-components::components/dash/layout/master');
+        return view('laravel-blade-components::layout/app');
     }
 }
