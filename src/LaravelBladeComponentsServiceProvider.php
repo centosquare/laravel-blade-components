@@ -12,6 +12,9 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadViewsFrom(__DIR__. '/views','laravel-blade-components');
+
         $this->publishes([
             __DIR__.'/views' => resource_path('views'),
         ]);
