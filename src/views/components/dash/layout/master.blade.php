@@ -74,6 +74,27 @@
 <!--begin::Vendors Javascript(used for this page only)-->
 <script src="{{asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
 <!--end::Vendors Javascript-->
+<!--begin::Vendors Javascript(used for this page only)-->
+<script src="{{asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
+<!--end::Vendors Javascript-->
+<!--begin::Custom Javascript(used for this page only)-->
+<script src="{{asset('assets/js/custom/account/settings/signin-methods.js')}}"></script>
+<script src="{{asset('assets/js/custom/account/settings/profile-details.js')}}"></script>
+<script src="{{asset('assets/js/custom/account/settings/deactivate-account.js')}}"></script>
+<script src="{{asset('assets/js/custom/pages/user-profile/general.js')}}"></script>
+<script src="{{asset('assets/js/widgets.bundle.js')}}"></script>
+<script src="{{asset('assets/js/custom/widgets.js')}}"></script>
+<script src="{{asset('assets/js/custom/apps/chat/chat.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/create-app.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/offer-a-deal/type.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/offer-a-deal/details.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/offer-a-deal/finance.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/offer-a-deal/complete.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/offer-a-deal/main.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/two-factor-authentication.js')}}"></script>
+<script src="{{asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
+<!--end::Custom Javascript-->
 <!--end::Javascript-->
 <script type="text/javascript">
     $(document).ready(function() {
