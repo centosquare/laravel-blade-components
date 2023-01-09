@@ -9,7 +9,17 @@
         <x-dash.table.index></x-dash.table.index>
     </x-slot> --}}
     <x-slot name="content">
-        <x-dash.form.index></x-dash.form.index>
+        <x-dash.card.index>
+            <x-slot name="body">
+                <x-dash.form.index>
+                    <x-slot name="input">
+                        <x-dash.form.input></x-dash.form.input>
+                    </x-slot>
+                </x-dash.form.index>
+            </x-slot>
+        </x-dash.card.index>
+
+
     </x-slot>
 
 
