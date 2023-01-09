@@ -18,6 +18,13 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
 
         Blade::component('laravel-blade-components::components.dash.layout.master', 'dash.layout.master');
         Blade::component('laravel-blade-components::components.dash.layout.header', 'dash.layout.header');
+        Blade::component('laravel-blade-components::components.dash.layout.left_sidebar', 'dash.layout.left_sidebar');
+        Blade::component('laravel-blade-components::components.dash.nav.index', 'dash.nav.index');
+        Blade::component('laravel-blade-components::components.dash.nav.tree', 'dash.nav.tree');
+        Blade::component('laravel-blade-components::components.dash.icons.dashboard', 'dash.icons.dashboard');
+        Blade::component('laravel-blade-components::components.dash.nav.sub-item', 'dash.nav.sub-item');
+        Blade::component('laravel-blade-components::components.dash.nav.item', 'dash.nav.item');
+
 
 
 
