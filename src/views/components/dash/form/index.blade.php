@@ -5,6 +5,7 @@
             {{$input ?? ''}}
             {{$textarea ?? ''}}
             {{$dropdown ?? ''}}
+            {{$media ?? ''}}
         </div>
         <!--end::Card body-->
         <!--begin::Actions-->

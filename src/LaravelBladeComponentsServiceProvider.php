@@ -32,6 +32,7 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
         Blade::component('laravel-blade-components::components.dash.form.input', 'dash.form.input');
         Blade::component('laravel-blade-components::components.dash.form.textarea', 'dash.form.textarea');
         Blade::component('laravel-blade-components::components.dash.form.dropdown', 'dash.form.dropdown');
+        Blade::component('laravel-blade-components::components.dash.form.media', 'dash.form.media');
 
         Blade::component('laravel-blade-components::components.dash.card.index', 'dash.card.index');
 
