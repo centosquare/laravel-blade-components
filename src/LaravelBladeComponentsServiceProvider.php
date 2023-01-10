@@ -25,7 +25,15 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
         Blade::component('laravel-blade-components::components.dash.nav.sub-item', 'dash.nav.sub-item');
         Blade::component('laravel-blade-components::components.dash.nav.item', 'dash.nav.item');
 
+        Blade::component('laravel-blade-components::components.dash.table.index', 'dash.table.index');
+        Blade::component('laravel-blade-components::components.dash.table.th', 'dash.table.th');
 
+        Blade::component('laravel-blade-components::components.dash.form.index', 'dash.form.index');
+        Blade::component('laravel-blade-components::components.dash.form.input', 'dash.form.input');
+        Blade::component('laravel-blade-components::components.dash.form.textarea', 'dash.form.textarea');
+        Blade::component('laravel-blade-components::components.dash.form.dropdown', 'dash.form.dropdown');
+
+        Blade::component('laravel-blade-components::components.dash.card.index', 'dash.card.index');
 
 
         $this->publishes([
