@@ -21,6 +21,9 @@
                     <x-slot name="dropdown">
                         <x-dash.form.dropdown></x-dash.form.dropdown>
                     </x-slot>
+                    <x-slot name="media">
+                        <x-dash.form.media></x-dash.form.media>
+                    </x-slot>
                 </x-dash.form.index>
             </x-slot>
         </x-dash.card.index>

@@ -6,7 +6,7 @@
     <!--begin::Select-->
         <select name="{{$name ?? ''}}" data-control="select2" data-placeholder="{{$label ?? 'Select a label'}}" class="form-select form-select-solid form-select-lg">
             @foreach ($key ?? [] as $value)
-                <option value="{{ $value->id }}">{{ $value->name}}</option>
+                <option value="{{ $value->id ?? '' }}">{{ $value->name ?? ''}}</option>
             @endforeach
         </select>
     <!--end::Select-->
