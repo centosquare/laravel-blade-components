@@ -3,7 +3,8 @@
         <!--begin::Card body-->
         <div class="card-body border-top p-9">
             {{$input ?? ''}}
-            {{$hint ?? ''}}
+            {{$textarea ?? ''}}
+            {{$dropdown ?? ''}}
         </div>
         <!--end::Card body-->
         <!--begin::Actions-->
