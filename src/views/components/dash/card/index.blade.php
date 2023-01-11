@@ -1,4 +1,4 @@
-<div class="card shadow-{{$shadowSize ?? 'sm'}} mb-{{$mb ?? '5'}} {{$cardClass ?? ''}}">
+<div class="card shadow-{{$shadowSize ?? 'sm'}} mb-{{$mb ?? '5'}} mt-{{$mt ?? '5'}} {{$cardClass ?? ''}}">
     @if(isset($title) || isset($action))
         <div class="card-header">
             <h3 class="card-title align-items-start flex-column">
