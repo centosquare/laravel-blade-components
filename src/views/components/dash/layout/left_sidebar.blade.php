@@ -1,4 +1,4 @@
-<x-dash.nav.index>
+<x-dash.nav>
     <x-dash.nav.tree title="Dashboard">
         <x-slot name="icon">
             <x-dash.icons.dashboard></x-dash.icons.dashboard>
@@ -13,4 +13,4 @@
             <x-dash.icons.dashboard></x-dash.icons.dashboard>
         </x-slot>
     </x-dash.nav.item>
-</x-dash.nav.index>
+</x-dash.nav>
