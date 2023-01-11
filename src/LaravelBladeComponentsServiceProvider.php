@@ -1,7 +1,6 @@
 <?php
 namespace CentoSquare\LaravelBladeComponents;
 
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelBladeComponentsServiceProvider extends ServiceProvider
@@ -40,8 +39,6 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/views' => resource_path('views'),
         ]);
-
-        // Blade::component('dash/layout/header');
     }
 
     /**
