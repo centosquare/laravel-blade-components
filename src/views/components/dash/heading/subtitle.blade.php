@@ -1,1 +1,1 @@
-<span class="text-muted fw-semibold fs-7 {{isset($subLabelClass) && $subLabelClass != '' ? $subLabelClass : 'false'}}">{{$subTitle ?? ''}}</span>
+<span class="{{isset($subLabelClass) && $subLabelClass != '' ? $subLabelClass : 'text-muted fw-semibold fs-7 '}}">{{$subTitle ?? ''}}</span>
