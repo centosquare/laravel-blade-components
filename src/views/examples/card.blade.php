@@ -28,23 +28,29 @@
     </x-slot>
     {{--toolbar end--}}
 
-    {{--card start--}}
+    {{--content start--}}
     <x-slot name="content">
-        <x-dash.card title="Card Title" subTitle="Card Subtitle Example">
-            <x-slot name="action">
-                <x-dash.anchor.btn text="Card Button"></x-dash.anchor.btn>
-            </x-slot>
-            <x-slot name="body">
-                <x-dash.form action="{{route('cardPost')}}">
+        {{--card start--}}
+        <x-dash.card>
+            <x-dash.card.header title="Card Title" subTitle="Card Subtitle Example">
+                <x-slot name="action">
+                    <x-dash.anchor.btn text="Card Button"></x-dash.anchor.btn>
+                </x-slot>
+            </x-dash.card.header>
+            <x-dash.form action="{{route('cardPost')}}">
+                <x-dash.card.body>
                     <x-dash.row>
-                        <x-dash.form.input colSize="md-5" name="test_label"></x-dash.form.input>
-                        <x-dash.btn text="Submit"></x-dash.btn>
+                        <x-dash.form.input colLength="5" label="Test Label*" subLabel="Test input sub-label" name="test_label" placeholder="test placeholder"></x-dash.form.input>
                     </x-dash.row>
-                </x-dash.form>
-            </x-slot>
+                </x-dash.card.body>
+                <x-dash.card.footer>
+                    <x-dash.btn text="Submit"></x-dash.btn>
+                </x-dash.card.footer>
+            </x-dash.form>
         </x-dash.card>
+        {{--card end--}}
     </x-slot>
-    {{--card end--}}
+    {{--content end--}}
 
     {{--footer start--}}
     <x-slot name="footer">

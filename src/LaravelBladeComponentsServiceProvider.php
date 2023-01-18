@@ -55,7 +55,9 @@ class LaravelBladeComponentsServiceProvider extends ServiceProvider
         Blade::component('laravel-blade-components::components.dash.form.media', 'dash.form.media');
 
         Blade::component('laravel-blade-components::components.dash.card.index', 'dash.card');
-
+        Blade::component('laravel-blade-components::components.dash.card.header', 'dash.card.header');
+        Blade::component('laravel-blade-components::components.dash.card.body', 'dash.card.body');
+        Blade::component('laravel-blade-components::components.dash.card.footer', 'dash.card.footer');
 
         $this->publishes([
             __DIR__.'/views' => resource_path('views'),
