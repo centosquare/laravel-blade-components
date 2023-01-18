@@ -40,8 +40,8 @@
             <x-dash.form action="{{route('cardPost')}}">
                 <x-dash.card.body>
                     <x-dash.row>
-                        <x-dash.form.input label="Test Label*" subLabel="Test input sub-label" name="test_label" placeholder="test placeholder"></x-dash.form.input>
-                        <x-dash.form.textarea label="Test textarea Label*" subLabel="Test textarea sub-label" name="test_texarea" placeholder="test placeholder"></x-dash.form.textarea>
+                        <x-dash.form.input type="text" label="Test Label*" subLabel="Test input sub-label" name="test_label" placeholder="test placeholder"></x-dash.form.input>
+                        <x-dash.form.input type="textarea" label="Test textarea Label*" subLabel="Test textarea sub-label" name="test_texarea" placeholder="test placeholder"></x-dash.form.input>
                         <x-dash.form.select label="Test select Label*" subLabel="Test select sub-label" name="test_texarea" placeholder="test placeholder"></x-dash.form.select>
                     </x-dash.row>
                 </x-dash.card.body>
