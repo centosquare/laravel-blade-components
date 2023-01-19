@@ -11,10 +11,14 @@
                           cols="{{$textAreaCol ?? '50'}}">{{isset($value) ? old($name,$value) : old($name)}}</textarea>
                 @break
             @case(str_contains($type, "select"))
-                <select class="form-select" data-control="select2" data-placeholder="Select an option" @if($type == 'select') data-hide-search="true" @endif>
+                <select id="{{$inputId ?? Str::random(5)}}" class="form-select {{$inputClass ?? ''}}"
+                        name={{$name}} data-control="select2" data-placeholder="Select an option"
+                        @if($type == 'select') data-hide-search="true" @endif>
                     <option></option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
+                    @foreach($items as $key => $item)
+                        <option
+                            value="{{$key}}" {{ (old($name) == $key || isset($selected) && ($selected == $key) ? "selected":"") }}>{{$item}}</option>
+                    @endforeach
                 </select>
                 @break
             @default

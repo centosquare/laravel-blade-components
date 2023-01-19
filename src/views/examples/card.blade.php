@@ -40,9 +40,16 @@
             <x-dash.form action="{{route('cardPost')}}">
                 <x-dash.card.body>
                     <x-dash.row>
-                        <x-dash.form.input type="text" label="Test Label*" subLabel="Test input sub-label" name="test_label" placeholder="test placeholder"></x-dash.form.input>
-                        <x-dash.form.input type="textarea" label="Test textarea Label*" subLabel="Test textarea sub-label" name="test_textarea" placeholder="test placeholder"></x-dash.form.input>
-                        <x-dash.form.input type="select" label="Test select Label*" subLabel="Test select sub-label" name="test_textarea" placeholder="test placeholder"></x-dash.form.input>
+                        <x-dash.form.input type="text" label="Test Label*" subLabel="Test input sub-label"
+                                           name="test_label" placeholder="test placeholder"></x-dash.form.input>
+                        <x-dash.form.input type="textarea" label="Test textarea Label*"
+                                           subLabel="Test textarea sub-label" name="test_textarea"
+                                           placeholder="test placeholder"></x-dash.form.input>
+                        <x-dash.form.input type="select" label="Test select Label*" subLabel="Test select sub-label"
+                                           name="test_textarea" placeholder="test placeholder"
+                                           :items="['pending' => 'Pending', 'delivered' => 'Delivered', 'received' => 'Received','cancelled' => 'Cancelled']"
+                                           selected="delivered"
+                        ></x-dash.form.input>
                     </x-dash.row>
                 </x-dash.card.body>
                 <x-dash.card.footer>
