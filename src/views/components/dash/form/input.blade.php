@@ -12,14 +12,40 @@
                 @break
             @case(str_contains($type, "select"))
                 <select id="{{$inputId ?? Str::random(5)}}" class="form-select {{$inputClass ?? ''}}"
-                        name={{$name}} data-control="select2" data-placeholder="Select an option"
+                        name={{$name}} data-control="select2" data-placeholder="{{$placeholder ?? ''}}"
                         @if($type == 'select') data-hide-search="true" @endif>
-                    <option></option>
+                    @isset($placeholder)
+                        <option></option>
+                    @endisset
                     @foreach($items as $key => $item)
                         <option
                             value="{{$key}}" {{ (old($name) == $key || isset($selected) && ($selected == $key) ? "selected":"") }}>{{$item}}</option>
                     @endforeach
                 </select>
+                @break
+            @case('checkbox')
+                <x-dash.div divClass="form-check form-check-custom form-check-solid {{$checkboxClass ?? ''}}">
+                    <input class="form-check-input {{$checkboxHeight ?? 'h-30px'}} {{$checkboxWidth ?? 'w-30px'}}"
+                           type="checkbox" value="{{$value ?? ''}}"
+                           id="{{$inputId ?? Str::random(5)}}"/>
+                    @isset($checkboxText)
+                        <label class="form-check-label">
+                            {{$checkboxText}}
+                        </label>
+                    @endisset
+                </x-dash.div>
+                @break
+            @case('radio')
+                <x-dash.div
+                    divClass="form-check form-check-custom form-check-solid form-check-{{$radioSize ?? 'sm'}} {{$radioClass ?? ''}}">
+                    <input class="form-check-input" type="radio" value="{{$value ?? ''}}" name="{{$name}}"
+                           id="{{$inputId ?? Str::random(5)}}"/>
+                    @isset($radioText)
+                        <label class="form-check-label">
+                            {{$radioText}}
+                        </label>
+                    @endisset
+                </x-dash.div>
                 @break
             @default
                 <input id="{{$inputId ?? Str::random(5)}}" type="{{$type}}"

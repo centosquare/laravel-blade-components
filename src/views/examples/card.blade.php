@@ -46,10 +46,26 @@
                                            subLabel="Test textarea sub-label" name="test_textarea"
                                            placeholder="test placeholder"></x-dash.form.input>
                         <x-dash.form.input type="select" label="Test select Label*" subLabel="Test select sub-label"
-                                           name="test_textarea" placeholder="test placeholder"
-                                           :items="['pending' => 'Pending', 'delivered' => 'Delivered', 'received' => 'Received','cancelled' => 'Cancelled']"
-                                           selected="delivered"
-                        ></x-dash.form.input>
+                                           name="test_select" placeholder="Select an option"
+                                           :items="['pending' => 'Pending', 'delivered' => 'Delivered', 'received' => 'Received','cancelled' => 'Cancelled']"></x-dash.form.input>
+                        <x-dash.form.input type="checkbox" colLength="2" checkboxText="test checkbox1"
+                                           label="Test select Label*" subLabel="Test select sub-label"
+                                           name="test_select"></x-dash.form.input>
+                        <x-dash.form.input type="checkbox" checkboxClass="mt-8" colLength="2"
+                                           checkboxText="test checkbox2"
+                                           name="test_select"></x-dash.form.input>
+                        <x-dash.form.input type="checkbox" checkboxClass="mt-8" colLength="2"
+                                           checkboxText="test checkbox3"
+                                           name="test_select"></x-dash.form.input>
+                        <x-dash.row>
+                            <x-dash.form.input type="radio" colLength="2"
+                                               radioText="test radio1" label="Test radio button*"
+                                               name="test_select"></x-dash.form.input>
+                            <x-dash.form.input type="radio" radioClass="mt-8" colLength="2"
+                                               radioText="test radio2"
+                                               name="test_select"></x-dash.form.input>
+                        </x-dash.row>
+
                     </x-dash.row>
                 </x-dash.card.body>
                 <x-dash.card.footer>
