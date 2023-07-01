@@ -1,5 +1,6 @@
 <!--begin:Menu Tree item-->
-<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+<div data-kt-menu-trigger="click" class="menu-item menu-accordion
+{{isset($menuTreeItems) && is_array($menuTreeItems) && in_array(Request::route()->getName(), $menuTreeItems) ? 'show' : '' }}">
     <!--begin:Menu link-->
     <span class="menu-link">
         <span class="menu-icon">
