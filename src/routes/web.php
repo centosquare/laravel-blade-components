@@ -19,7 +19,7 @@ Route::middleware('web')->group(function () {
     })->name('example.index');
     Route::get('card', function () {
         return view('laravel-blade-components::examples.card');
-    });
+    })->name('card');
 
 
     Route::post('cardPost', function (\Illuminate\Http\Request $request) {

@@ -25,7 +25,7 @@
                 @break
             @case('checkbox')
                 <x-dash.div divClass="form-check form-check-custom form-check-solid {{$checkboxClass ?? ''}}">
-                    <input class="form-check-input {{$checkboxHeight ?? 'h-30px'}} {{$checkboxWidth ?? 'w-30px'}}"
+                    <input class="form-check-input {{$checkboxHeight ?? 'h-20px'}} {{$checkboxWidth ?? 'w-20px'}}"
                            type="checkbox" value="{{$value ?? ''}}"
                            id="{{$inputId ?? Str::random(5)}}"/>
                     @isset($checkboxText)
@@ -43,6 +43,22 @@
                     @isset($radioText)
                         <label class="form-check-label">
                             {{$radioText}}
+                        </label>
+                    @endisset
+                </x-dash.div>
+                @break
+
+            @case('switch')
+                <x-dash.div
+                    divClass="form-check form-switch form-check-custom form-check-solid {{$switchClass ?? ''}}">
+                    <input
+                        class="form-check-input {{$switchHeight ?? 'h-30px'}} {{$switchWidth ?? 'w-50px'}} {{$inputClass ?? ''}}"
+                        type="checkbox"
+                        value="{{$value ?? ''}}" name="{{$name}}"
+                        id="{{$inputId ?? Str::random(5)}}"/>
+                    @isset($switchText)
+                        <label class="form-check-label {{$switchLabelClass ?? ''}}">
+                            {{$switchText}}
                         </label>
                     @endisset
                 </x-dash.div>

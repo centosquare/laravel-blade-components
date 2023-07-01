@@ -1,7 +1,7 @@
 <!--begin:Menu item-->
 <div class="menu-item">
     <!--begin:Menu link-->
-    <a class="menu-link {{$active ?? ''}}" href="{{$route ?? ''}}">
+    <a class="menu-link {{ Request::route()->getName() == ($routeName ?? '') ? 'active' : ''}}" href="{{$route ?? ''}}">
         <span class="menu-icon">
             {{$icon ?? ''}}
         </span>
